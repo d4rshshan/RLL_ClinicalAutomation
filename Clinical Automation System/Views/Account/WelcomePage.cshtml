@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "WelcomePage";
+}
+<style>
+    body {
+        background-image: url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
+<body>
+
+
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 12rem;">
+                    <img src="~/images/admin.jpg" class="card-img-top" alt="admin" />
+                    <div class="card-body">
+                        <div>
+                            @Html.ActionLink("Manage Admin", "Login")
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 12rem;">
+                    <img src="~/images/doctor.jpg" class="card-img-top" alt="doctor" />
+                    <div class="card-body">
+                        <div>
+                            <div>
+                                @Html.ActionLink("Manage Doctor", "Login")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 12rem;">
+                    <img src="~/images/patinet..jpg" class="card-img-top" alt="patinet" />
+                    <div class="card-body">
+                        <div>
+                            @Html.ActionLink("Manage Patient", "PatientLogin")
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 12rem;">
+                    <img src="~/images/appoint.jpg" class="card-img-top" alt="appoint" />
+                    <div class="card-body">
+                        <div>
+                            @Html.ActionLink("Manage Appointments", "Login")
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 12rem;">
+                    <img src="~/images/pharmacist.jpg" class="card-img-top" alt="pharmacist" />
+                    <div class="card-body">
+                        <div>
+                            @Html.ActionLink("Manage Medicines", "Login")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
